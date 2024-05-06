@@ -47,7 +47,7 @@ const Content = (props) => {
                         </h1>
                         <div className="hero-2-content__text" data-animate="fade-left">Full-Stack Developer Based in India</div>
                         <div className="link-group" data-animate="fade-up" data-animate-delay="250ms">
-                            <a href="homepage-2.html#contact" className="btn btn--primary">
+                            <a href="#contact" className="btn btn--primary">
                                 <span>Let's Talk</span>
                                 <span className="btn__icon">
                                     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +55,7 @@ const Content = (props) => {
                                     </svg>
                                 </span>
                             </a>
-                            <a href="portfolio.html" className="arrow-link underline-animation">
+                            <a href="#portfolio" className="arrow-link underline-animation">
                                 <span>My Works</span>
                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="currentColor" d="M12.8137 1.00819C12.8137 0.732049 12.5899 0.508192 12.3137 0.508191L7.81371 0.508191C7.53757 0.508191 7.31371 0.732049 7.31371 1.00819C7.31371 1.28433 7.53757 1.50819 7.81371 1.50819L11.8137 1.50819L11.8137 5.50819C11.8137 5.78433 12.0376 6.00819 12.3137 6.00819C12.5899 6.00819 12.8137 5.78433 12.8137 5.50819L12.8137 1.00819ZM1.35355 12.6755L12.6673 1.36174L11.9602 0.654638L0.646447 11.9683L1.35355 12.6755Z"/>
@@ -96,7 +96,7 @@ const Content = (props) => {
                                 <div className="about-info__text fw-medium">Surat, Gujarat, India</div>
                             </div>
                         </div>
-                        <a href="homepage-2.html#" className="btn btn--primary">
+                        <a href="#" className="btn btn--primary">
                             <span>Download Resume</span>
                             <span className="btn__icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -506,7 +506,7 @@ const Content = (props) => {
                         <h2>Recent <span className="fw-semibold">works</span></h2>
                         <p>Discover my curated portfolio showcasing seamless user experiences and the fusion of code and creativity in engaging websites.</p>
                     </div>
-                    <a href="portfolio.html" className="arrow-link underline-animation" data-animate="fade" data-animate-delay="200ms">
+                    <a href="#portfolio" className="arrow-link underline-animation" data-animate="fade" data-animate-delay="200ms">
                         <span>View All</span>
                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill="currentColor" d="M12.8137 1.00819C12.8137 0.732049 12.5899 0.508192 12.3137 0.508191L7.81371 0.508191C7.53757 0.508191 7.31371 0.732049 7.31371 1.00819C7.31371 1.28433 7.53757 1.50819 7.81371 1.50819L11.8137 1.50819L11.8137 5.50819C11.8137 5.78433 12.0376 6.00819 12.3137 6.00819C12.5899 6.00819 12.8137 5.78433 12.8137 5.50819L12.8137 1.00819ZM1.35355 12.6755L12.6673 1.36174L11.9602 0.654638L0.646447 11.9683L1.35355 12.6755Z"/>
@@ -576,7 +576,7 @@ const Content = (props) => {
                     <div className="cta__content" data-animate="fade-left">
                         <p>Discuss your project needs with me; together, we'll create remarkable solutions and experiences.</p>
                         <div className="link-group">
-                            <a href="homepage-2.html#" className="btn btn--secondary">
+                            <a href="#" className="btn btn--secondary">
                                 <span>Download Resume</span>
                                 <span className="btn__icon">
                                     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -584,7 +584,7 @@ const Content = (props) => {
                                     </svg>
                                 </span>
                             </a>
-                            <a href="portfolio.html" className="arrow-link underline-animation">
+                            <a href="#portfolio" className="arrow-link underline-animation">
                                 <span>My Portfolio</span>
                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="currentColor" d="M12.8137 1.00819C12.8137 0.732049 12.5899 0.508192 12.3137 0.508191L7.81371 0.508191C7.53757 0.508191 7.31371 0.732049 7.31371 1.00819C7.31371 1.28433 7.53757 1.50819 7.81371 1.50819L11.8137 1.50819L11.8137 5.50819C11.8137 5.78433 12.0376 6.00819 12.3137 6.00819C12.5899 6.00819 12.8137 5.78433 12.8137 5.50819L12.8137 1.00819ZM1.35355 12.6755L12.6673 1.36174L11.9602 0.654638L0.646447 11.9683L1.35355 12.6755Z"/>
