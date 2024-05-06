@@ -1,3 +1,4 @@
+window.scrollBy(0, 1);
 
 const animate = document.querySelectorAll('[data-animate]');
 
@@ -7,18 +8,6 @@ const invalidEmailText1 = "Please enter your email id";
 const invalidEmailText2 = "Please enter valid email id";
 const emailSentText = "Your message has been sent. We'll be in touch with you soon";
 const emailFailedText = "Sending fail, Please try again letter";
-
-/**
- * Page loading
- */
-function loading() {
-    const loader = document.getElementById('loader');
-
-    loader.classList.add('hide');
-    setTimeout(() => {
-        document.body.classList.add('loaded');
-    }, 500);
-}
 
 /**
  * Check element is in viewport
@@ -149,63 +138,63 @@ function scrollToElement() {
 /**
  * Portfolio card slider
  */
-function portfolioCards() {
-    new Swiper('#portfolio_cards', {
-        slidesPerView: 1,
-        spaceBetween: 16,
+// function portfolioCards() {
+//     new Swiper('#portfolio_cards', {
+//         slidesPerView: 1,
+//         spaceBetween: 16,
 
-        pagination: {
-            el: '#portfolio_cards .swiper-pagination',
-            clickable: true
-        },
+//         pagination: {
+//             el: '#portfolio_cards .swiper-pagination',
+//             clickable: true
+//         },
 
-        breakpoints: {
-            580: { slidesPerView: 2 },
-            992: { slidesPerView: 3 }
-        }
-    });
-}
+//         breakpoints: {
+//             580: { slidesPerView: 2 },
+//             992: { slidesPerView: 3 }
+//         }
+//     });
+// }
 
-/**
- * Testimonial slider
- */
-function testimonialSlider() {
+// /**
+//  * Testimonial slider
+//  */
+// function testimonialSlider() {
     
-    new Swiper('#testimonial_slider', {
-        direction: 'horizontal',
-        slidesPerView: 1,
-        spaceBetween: 16,
+//     new Swiper('#testimonial_slider', {
+//         direction: 'horizontal',
+//         slidesPerView: 1,
+//         spaceBetween: 16,
 
-        pagination: {
-            el: '#testimonial_slider .swiper-pagination',
-            clickable: true
-        },
+//         pagination: {
+//             el: '#testimonial_slider .swiper-pagination',
+//             clickable: true
+//         },
 
-        autoplay: {
-            delay: 5000
-        },
-    });
-}
+//         autoplay: {
+//             delay: 5000
+//         },
+//     });
+// }
 
-/**
- * Blog card slider
- */
-function blogCards() {
-    new Swiper('#blog_cards', {
-        slidesPerView: 1,
-        spaceBetween: 16,
+// /**
+//  * Blog card slider
+//  */
+// function blogCards() {
+//     new Swiper('#blog_cards', {
+//         slidesPerView: 1,
+//         spaceBetween: 16,
 
-        pagination: {
-            el: '#blog_cards .swiper-pagination',
-            clickable: true
-        },
+//         pagination: {
+//             el: '#blog_cards .swiper-pagination',
+//             clickable: true
+//         },
 
-        breakpoints: {
-            580: { slidesPerView: 2 },
-            992: { slidesPerView: 3 }
-        }
-    });
-}
+//         breakpoints: {
+//             580: { slidesPerView: 2 },
+//             992: { slidesPerView: 3 }
+//         }
+//     });
+// }
 
 /**
  * Contact form
@@ -330,13 +319,13 @@ async function sendEmail(url) {
  * Call functions on window load.
  */
 window.onload = () => {
-    loading();
+    
     scrollAnimation();
     menu();
     scrollToElement();
-    portfolioCards();
-    testimonialSlider();
-    blogCards();
+    // portfolioCards();
+    // testimonialSlider();
+    // blogCards();
     contactForm();
 }
 
@@ -345,6 +334,7 @@ window.onload = () => {
  * For scroll animation.
  */
 window.addEventListener("scroll", scrollAnimation);
+
 
 
 /**

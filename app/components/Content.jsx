@@ -1,5 +1,6 @@
 "use client"
 import React, { use } from 'react'
+import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation,Pagination } from 'swiper/modules'
 
@@ -11,7 +12,7 @@ const Content = (props) => {
   return (
     
     <main id="main">
-        <header id="header">
+        {/* <header id="header">
             <div className="container">
                 <div className="setting">
                     <input type="checkbox" id="theme" />
@@ -28,14 +29,13 @@ const Content = (props) => {
                 <a href="#" role="button" id="hamburger" aria-label="Hamburger"></a>
 
             </div>
-        </header>
+        </header> */}
         <section id="intro">
             <div className="container relative">
                 <div className="row">
                     <div className="hero-2">
                         <div className="hero-cover relative" data-animate="fade-right">
-                            <img src="images/hero/hero.png" className="hero-cover__image" alt="" />
-                            {/* <img src="images/shapes/warm.svg" className="shape shape--13" alt="" /> */}
+                            <img src="/images/hero/hero.png" className="hero-cover__image" alt="" />
                             <div className="hero-border"></div>
                             <div className="hero-shape"></div>
                         </div>
@@ -63,7 +63,7 @@ const Content = (props) => {
                             </a>
                         </div>
                         {/* <a href="homepage-2.html#about" className="circle scroll-down" aria-label="Scroll down" data-animate="fade-up" data-animate-delay="400ms">
-                            <img src="images/icons/scroll-down.svg" alt="" />
+                            <img src="/images/icons/scroll-down.svg" alt="" />
                         </a> */}
                     </div>
                 </div>
@@ -89,7 +89,7 @@ const Content = (props) => {
                             </div>
                             <div className="about-info__item">
                                 <span>Phone no.</span>
-                                <a href="tel:(91)84694-43355" className="about-info__text fw-medium">(91)84694-43355</a>
+                                <a href="tel:(+91)84694-43355" className="about-info__text fw-medium">(+91)84694-43355</a>
                             </div>
                             <div className="about-info__item">
                                 <span>Address</span>
@@ -108,24 +108,19 @@ const Content = (props) => {
                     
                     <div className="about-content" data-animate="fade-left">
                         <h2>About <span className="fw-semibold">me</span></h2>
-                        <p className="fw-medium">Hello, I’m Hitesh Padhara, Full-Stack Developer Based in India.</p>
-                        <p>Crafting seamless user experiences through code and creativity, I specialize in front-end development and design. Let's bring your website to life with intuitive interfaces and visually stunning layouts, tailored to engage and inspire your audience.</p>
+                        <p className="fw-medium">Crafting seamless user experiences through code and creativity, I specialize in full-stack development encompassing front-end technologies such as React.js and Next.js, along with backend frameworks like Laravel and CodeIgniter. Let's bring your website to life with intuitive interfaces and visually stunning layouts, tailored to engage and inspire your audience.</p>
                         <div className="stats">
                             <div className="stats__item">
-                                <span className="stats__number">10</span>
+                                <span className="stats__number">7</span>
                                 <p>Years of Experience</p>
                             </div>
                             <div className="stats__item">
-                                <span className="stats__number">68</span>
+                                <span className="stats__number">4</span>
                                 <p>Happy client’s Worldwide</p>
                             </div>
                             <div className="stats__item">
-                                <span className="stats__number">90</span>
+                                <span className="stats__number">10</span>
                                 <p>Projects Completed</p>
-                            </div>
-                            <div className="stats__item">
-                                <span className="stats__number">15</span>
-                                <p>Award & Achievements</p>
                             </div>
                         </div>
                     </div>
@@ -137,86 +132,293 @@ const Content = (props) => {
                         <div className="experience" data-animate="fade-right">
                             <div className="mb-48">
                                 <h3>My <span className="fw-semibold">experience</span></h3>
-                                <p>Experienced front-end developer & designer creating compelling digital experiences. Elevating online presence through expertly crafted interfaces and captivating designs.</p>
+                                <p>Experienced full-stack developer and designer proficient in crafting compelling digital experiences. Elevating online presence through expertly crafted interfaces and captivating designs, utilizing a comprehensive skill set spanning front-end technologies like React.js and Next.js, as well as backend frameworks such as Laravel and CodeIgniter.</p>
                             </div>
                             <div className="experience-list">
                                 <div className="experience-list__item">
                                     <div className="experience-list__block">
-                                        <span className="experience-list__subtitle">2023 - Present</span>
-                                        <span className="experience-list__title">UI/UX Team leader</span>
-                                        <p>Envato Market</p>
+                                        <span className="experience-list__subtitle">2022 - Present</span>
+                                        <span className="experience-list__title">Sr. Full Stack Developer</span>
+                                        <p>Vidillion</p>
                                     </div>
                                 </div>
                                 <div className="experience-list__item">
                                     <div className="experience-list__block">
-                                        <span className="experience-list__subtitle">2021 - 23</span>
-                                        <span className="experience-list__title">Front-end Developer</span>
-                                        <p>Envato Market</p>
+                                        <span className="experience-list__subtitle">2020 - 22</span>
+                                        <span className="experience-list__title">Project Team Leader</span>
+                                        <p>Alita Infotech</p>
                                     </div>
                                 </div>
                                 <div className="experience-list__item">
                                     <div className="experience-list__block">
-                                        <span className="experience-list__subtitle">2018 - 21</span>
-                                        <span className="experience-list__title">Front-end Developer</span>
-                                        <p>Envato Market</p>
+                                        <span className="experience-list__subtitle">2019 - 20</span>
+                                        <span className="experience-list__title">Laravel Developer</span>
+                                        <p>Dynamic Dreamz</p>
                                     </div>
                                 </div>
                                 <div className="experience-list__item">
                                     <div className="experience-list__block">
-                                        <span className="experience-list__subtitle">2016 - 18</span>
-                                        <span className="experience-list__title">UI/UX Designer</span>
-                                        <p>Envato Market</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div className="skill" data-animate="fade-left">
-                            <h3 className="mb-48">My <span className="fw-semibold">skills</span></h3>
-                            <div className="skill-list">
-                                <div className="skill-list__item">
-                                    <span className="skill-list__title fw-semibold">UI/UX Design</span>
-                                    <div className="progress">
-                                        <div className="progress__bar" style={{ '--progress-width': '90%' }}>
-                                            <span className="progress__badge">90%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="skill-list__item">
-                                    <span className="skill-list__title fw-semibold">Graphic Design</span>
-                                    <div className="progress">
-                                        <div className="progress__bar" style={{ '--progress-width': '80%' }}>
-                                            <span className="progress__badge">80%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="skill-list__item">
-                                    <span className="skill-list__title fw-semibold">UI Development</span>
-                                    <div className="progress">
-                                        <div className="progress__bar" style={{ '--progress-width': '97%' }}>
-                                            <span className="progress__badge">97%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="skill-list__item">
-                                    <span className="skill-list__title fw-semibold">Angular</span>
-                                    <div className="progress">
-                                        <div className="progress__bar" style={{ '--progress-width': '88%' }}>
-                                            <span className="progress__badge">88%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="skill-list__item">
-                                    <span className="skill-list__title fw-semibold">React</span>
-                                    <div className="progress">
-                                        <div className="progress__bar" style={{ '--progress-width': '82%' }}>
-                                            <span className="progress__badge">82%</span>
-                                        </div>
+                                        <span className="experience-list__subtitle">2016 - 19</span>
+                                        <span className="experience-list__title">Sr.PHP Developer</span>
+                                        <p>Nestcode Infotech</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section className="section">
+            <div className="container relative">
+                <img src="/images/shapes/dawn.svg" className="shape shape--6" data-animate="fade" data-animate-delay="400ms" alt="" />
+                <div className="cta relative">
+                    <div className="grid lg:grid-cols-5 gap-4 max-md:grid-cols-3 max-sm:grid-cols-2">
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/laravel.png" alt="Laravel" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">Laravel</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/php.png" alt="PHP" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">PHP</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/vuejs.png" alt="VueJS" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">VueJS</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/javascript.png" alt="JavaScript" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">JavaScript</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img
+                                    src="/images/skills/tailwindcss.png"
+                                    alt="TailwindCSS"
+                                    />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">TailwindCSS</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img
+                                    src="/images/skills/git.png"
+                                    alt="Git / Bitbucket / Github"
+                                    />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">Git / Bitbucket / Github</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={95}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                95%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/gcp.png" alt="AWS / GCP" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">AWS / GCP</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={90}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                90%
+                                </div>
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/redis.png" alt="Redis" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">Redis</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={90}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                90%
+                                </div>
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/mysql.png" alt="MySQL" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">MySQL</div>
+                        </div>
+                        
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={85}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                85%
+                                </div>
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/reactjs.png" alt="ReactJS" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">ReactJS</div>
+                        </div>
+                        
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={75}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                75%
+                                </div>
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img src="/images/skills/cicd.png" alt="CI/CD" />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">CI/CD</div>
+                        </div>
+                        <div className="text-center pb-3">
+                            <div className="progressCircle pt-2">
+                            <div
+                                className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
+                                data-percent={75}
+                            >
+                                <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
+                                75%
+                                </div>
+                                <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
+                                <div className="absolute flex-center skill-logo">
+                                <div className="text-center icon">
+                                    <img
+                                    src="/images/skills/docker.png"
+                                    alt="Docker / Kubernetes"
+                                    />
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="text-white name pt-2">Docker / Kubernetes</div>
+                        </div>
+                        </div>
+
                 </div>
             </div>
         </section>
@@ -241,58 +443,53 @@ const Content = (props) => {
                 <div className="section__head relative" data-animate="fade-up">
                     <span className="section__subtitle">Services</span>
                     <h2>What I <span className="fw-semibold">serviced</span></h2>
-                    <p>Specializing in responsive web design and interactive user experiences, we offer tailored front-end development solutions to boost user engagement and brand appeal.</p>
+                    <p>Specializing in full-stack web development, we offer comprehensive solutions encompassing both front-end and back-end development. With expertise in responsive web design and interactive user experiences, we deliver tailored solutions to boost user engagement and brand appeal across all aspects of your web presence.</p>
                 </div>
                 
                 <div className="service">
                     <div className="service__item" data-animate="fade-up">
                         <div className="service__number">01</div>
                         <div className="service__info">
-                            <span>8 Projects</span>
-                            <span className="service__title">Web Design</span>
+                            <span className="service__title">Full-Stack Web Development </span>
                         </div>
                         <div className="service__text">
-                            Crafting captivating web designs that merge aesthetics with functionality for an unparalleled user experience. Our designs harmonize innovation and usability, ensuring a seamless digital presence for your brand.
+                        Extensive expertise in full-stack web development across various frameworks and programming languages, ensuring robust and scalable solutions tailored to your unique needs.
                         </div>
                     </div>
                     <div className="service__item" data-animate="fade-up" data-animate-delay="100ms">
                         <div className="service__number">02</div>
                         <div className="service__info">
-                            <span>10 Projects</span>
-                            <span className="service__title">UI Development</span>
+                            <span className="service__title">Creative Web Design</span>
                         </div>
                         <div className="service__text">
-                            Crafting intuitive, visually appealing user interfaces for optimal interactions. Our UI development focuses on seamless design, enhancing user engagement.
+                        Proficient in designing visually stunning and highly functional websites using cutting-edge technologies such as SASS, Gulp, Tailwind and JSX, delivering captivating user experiences that resonate with your audience.
                         </div>
                     </div>
                     <div className="service__item" data-animate="fade-up" data-animate-delay="200ms">
                         <div className="service__number">03</div>
                         <div className="service__info">
-                            <span>2 Projects</span>
-                            <span className="service__title">Graphic Design</span>
+                            <span className="service__title">Efficient Server Management</span>
                         </div>
                         <div className="service__text">
-                            Creating impactful visuals by transforming ideas through innovative graphic design solutions, tailored to captivate and inspire audiences.
+                        Demonstrated proficiency in managing servers on Google Cloud Platform and AWS, ensuring seamless deployment and maintenance of web applications for optimal performance and reliability.
                         </div>
                     </div>
                     <div className="service__item" data-animate="fade-up" data-animate-delay="300ms">
                         <div className="service__number">04</div>
                         <div className="service__info">
-                            <span>12 Projects</span>
-                            <span className="service__title">UI/UX Design</span>
+                            <span className="service__title">Comprehensive Web Testing</span>
                         </div>
                         <div className="service__text">
-                            Crafting captivating UI/UX designs that merge aesthetics with functionality, delivering seamless and engaging user experiences.
+                        Skilled in conducting thorough testing of your web projects, employing a variety of test cases and unit testing methodologies to ensure the quality and reliability of your applications.
                         </div>
                     </div>
                     <div className="service__item" data-animate="fade-up" data-animate-delay="400ms">
                         <div className="service__number">05</div>
                         <div className="service__info">
-                            <span>14 Projects</span>
-                            <span className="service__title">Business Analysis</span>
+                            <span className="service__title">Experienced Technical Adviser</span>
                         </div>
                         <div className="service__text">
-                            Strategic business analysis to identify opportunities and optimize strategies for sustained growth. We offer tailored insights to enhance efficiency and drive success.
+                        With a wealth of experience in web development, I offer valuable insights and guidance to navigate the complexities of the digital landscape, helping you overcome challenges and achieve your goals effectively.
                         </div>
                     </div>
                 </div>
@@ -303,7 +500,7 @@ const Content = (props) => {
                 
                 <div className="portfolio-head relative">
                     <div className="shape shape--5" data-animate="fade-right">
-                        <img src="images/shapes/direction.svg" alt="" />
+                        <img src="/images/shapes/direction.svg" alt="" />
                     </div>
                     <div className="portfolio-content" data-animate="fade" data-animate-delay="200ms">
                         <h2>Recent <span className="fw-semibold">works</span></h2>
@@ -319,42 +516,7 @@ const Content = (props) => {
                 
                 <div className="portfolio-body relative">
                     <div id="portfolio_cards" data-animate="fade-up">
-                        {/* <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className="card">
-                                    <a href="portfolio-details.html" className="card__cover" aria-labelledby="portfolio_card_1">
-                                        <img src="images/hero/portfolio-1.jpg" alt="" />
-                                    </a>
-                                    <span className="card__subtitle">Development</span>
-                                    <div id="portfolio_card_1" className="h5 mb-0">
-                                        <a href="portfolio-details.html" className="underline-animation">Widdizy smart home app development</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="card">
-                                    <a href="portfolio-details.html" className="card__cover" aria-labelledby="portfolio_card_2">
-                                        <img src="images/hero/portfolio-2.jpg" alt="" />
-                                    </a>
-                                    <span className="card__subtitle">UI/UX Design</span>
-                                    <div id="portfolio_card_2" className="h5 mb-0">
-                                        <a href="portfolio-details.html" className="underline-animation">Jombee web app Figma design</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="card">
-                                    <a href="portfolio-details.html" className="card__cover" aria-labelledby="portfolio_card_3">
-                                        <img src="images/hero/portfolio-3.jpg" alt="" />
-                                    </a>
-                                    <span className="card__subtitle">Business Analysis</span>
-                                    <div id="portfolio_card_3" className="h5 mb-0">
-                                        <a href="portfolio-details.html" className="underline-animation">Kneew-Show business & data analysis</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-pagination"></div> */}
+                        
                         <Swiper
                                 slidesPerView={1}
                                 spaceBetween={16}
@@ -371,7 +533,7 @@ const Content = (props) => {
                             <SwiperSlide>
                                 <div className="card">
                                     <a href="portfolio-details.html" className="card__cover" aria-labelledby="portfolio_card_1">
-                                        <img src="images/hero/portfolio-1.jpg" alt="" />
+                                        <img src="/images/hero/portfolio-1.jpg" alt="" />
                                     </a>
                                     <span className="card__subtitle">Development</span>
                                     <div id="portfolio_card_1" className="h5 mb-0">
@@ -382,7 +544,7 @@ const Content = (props) => {
                             <SwiperSlide>
                                 <div className="card">
                                     <a href="portfolio-details.html" className="card__cover" aria-labelledby="portfolio_card_2">
-                                        <img src="images/hero/portfolio-2.jpg" alt="" />
+                                        <img src="/images/hero/portfolio-2.jpg" alt="" />
                                     </a>
                                     <span className="card__subtitle">UI/UX Design</span>
                                     <div id="portfolio_card_2" className="h5 mb-0">
@@ -393,7 +555,7 @@ const Content = (props) => {
                             <SwiperSlide>
                                 <div className="card">
                                     <a href="portfolio-details.html" className="card__cover" aria-labelledby="portfolio_card_3">
-                                        <img src="images/hero/portfolio-3.jpg" alt="" />
+                                        <img src="/images/hero/portfolio-3.jpg" alt="" />
                                     </a>
                                     <span className="card__subtitle">Business Analysis</span>
                                     <div id="portfolio_card_3" className="h5 mb-0">
@@ -406,58 +568,9 @@ const Content = (props) => {
                 </div>
             </div>
         </section>
-        <section id="testimonials" className="section">
-            <div className="container">
-                <div className="section__head" data-animate="fade-up">
-                    <span className="section__subtitle">Testimonials</span>
-                    <h2>What client's <span className="fw-semibold">say?</span></h2>
-                </div>
-                
-                <div className="testimonial" data-animate="fade-up" data-animate-delay="400ms">
-                    <div id="testimonial_slider" className="swiper">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <img src="images/icons/quote.svg" className="quote" alt="" />
-                                <p>Outstanding design, user-friendly experience, exceeded expectations. Professional, creative, and a pleasure to work with. Highly recommended for projects.</p>
-                                <div className="author">
-                                    <div className="author__image">
-                                        <img src="images/avatar.png" alt="" />
-                                    </div>
-                                    <span className="author__name">Jennie Nichols</span>
-                                    <p>Poore Simon's</p>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <img src="images/icons/quote.svg" className="quote" alt="" />
-                                <p>Outstanding design, user-friendly experience, exceeded expectations. Professional, creative, and a pleasure to work with. Highly recommended for projects.</p>
-                                <div className="author">
-                                    <div className="author__image">
-                                        <img src="images/avatar.png" alt="" />
-                                    </div>
-                                    <span className="author__name">Jennie Nichols</span>
-                                    <p>Poore Simon's</p>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <img src="images/icons/quote.svg" className="quote" alt="" />
-                                <p>Outstanding design, user-friendly experience, exceeded expectations. Professional, creative, and a pleasure to work with. Highly recommended for projects.</p>
-                                <div className="author">
-                                    <div className="author__image">
-                                        <img src="images/avatar.png" alt="" />
-                                    </div>
-                                    <span className="author__name">Jennie Nichols</span>
-                                    <p>Poore Simon's</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section className="section">
             <div className="container relative">
-                <img src="images/shapes/dawn.svg" className="shape shape--6" data-animate="fade" data-animate-delay="400ms" alt="" />
+                <img src="/images/shapes/dawn.svg" className="shape shape--6" data-animate="fade" data-animate-delay="400ms" alt="" />
                 <div className="cta relative">
                     <h2 className="cta__title" data-animate="fade-right">Have a Project? <span className="fw-semibold">Let's Discuss!</span></h2>
                     <div className="cta__content" data-animate="fade-left">
@@ -482,97 +595,17 @@ const Content = (props) => {
                 </div>
             </div>
         </section>
-        {/* <section id="blog" className="section">
-            <div className="container">
-                
-                <div className="blog-head relative">
-                    <span className="shape shape--7">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="170"
-                        fill="none"
-                        viewBox="0 0 170 180"
-                        >
-                        <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeWidth="10"
-                            d="M89.987 94.684c.162 1.826-3.231 2.826-4.99 0-1.9-2.495-.503-8.291 4.99-9.964 5.173-1.981 13.359 1.821 14.968 9.964 2.05 7.83-4.14 18.393-14.968 19.931-10.492 2.116-23.493-6.455-24.947-19.93-2.205-13.148 8.8-28.51 24.947-29.895 15.833-2.269 33.608 11.097 34.926 29.894 2.344 18.469-13.438 38.627-34.926 39.86-21.17 2.42-43.736-15.744-44.905-39.86-2.49-23.802 18.08-48.73 44.905-49.824 26.487-2.556 53.87 20.375 54.883 49.824 2.642 29.12-22.732 58.847-54.883 59.79-31.828 2.708-63.988-25.02-64.862-59.79-2.779-34.44 27.37-68.96 64.862-69.754 37.156-2.86 74.119 29.667 74.841 69.754 2.933 39.775-32.024 79.065-74.841 79.72-42.481 2.999-84.25-34.299-84.82-79.72C2.094 49.592 41.835 5.503 89.987 5"
-                        ></path>
-                        </svg>
-                    </span>
-                    <div className="blog-content relative">
-                        <span className="section__subtitle">Blogs</span>
-                        <h2 className="mb-0">Recent <span className="fw-semibold">Blog</span></h2>
-                    </div>
-                    <a href="blog.html" className="arrow-link underline-animation">
-                        <span>View All</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="13"
-                            height="13"
-                            fill="none"
-                            viewBox="0 0 13 13"
-                            >
-                            <path
-                                fill="currentColor"
-                                d="M12.814 1.008a.5.5 0 00-.5-.5h-4.5a.5.5 0 000 1h4v4a.5.5 0 001 0v-4.5zM1.354 12.676L12.667 1.361 11.96.655.646 11.968l.708.707z"
-                            ></path>
-                            </svg>
-                    </a>
-                </div>
-                
-                <div id="blog_cards" className="swiper" data-animate="fade-up">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide">
-                            <div className="card">
-                                <a href="blog-details.html" className="card__cover" aria-labelledby="blog_card_1">
-                                    <img src="images/hero/blog-1.jpg" alt="" />
-                                </a>
-                                <span className="card__subtitle">24 Mar. 2023 | 8 min read</span>
-                                <div id="blog_card_1" className="h5 mb-0">
-                                    <a href="blog-details.html" className="underline-animation">Innovation Junction: Exploring Cutting-Edge Solutions and Ideas</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="card">
-                                <a href="blog-details.html" className="card__cover" aria-labelledby="blog_card_2">
-                                    <img src="images/hero/blog-2.jpg" alt="" />
-                                </a>
-                                <span className="card__subtitle">14 Apr. 2023 | 4 min read</span>
-                                <div id="blog_card_2" className="h5 mb-0">
-                                    <a href="blog-details.html" className="underline-animation">Navigating Tech Trends: Insights into the Ever-Evolving Digital Landscape</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="swiper-slide">
-                            <div className="card">
-                                <a href="blog-details.html" className="card__cover" aria-labelledby="blog_card_3">
-                                    <img src="images/hero/blog-3.jpg" alt="" />
-                                </a>
-                                <span className="card__subtitle">26 May. 2023 | 5 min read</span>
-                                <div id="blog_card_3" className="h5 mb-0">
-                                    <a href="blog-details.html" className="underline-animation">Beyond Pixels: Unveiling the Artistry in Digital Design</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="swiper-pagination"></div>
-                </div>
-            </div>
-        </section> */}
         <section id="contact" className="section">
             <div className="container">
                 <div className="mb-64 relative">
-                    <img src="images/shapes/stars.svg" className="shape shape--9" alt="" />
+                    <img src="/images/shapes/stars.svg" className="shape shape--9" alt="" />
                     <span className="section__subtitle">Let’s talk</span>
                     <h2 className="mb-0">Get in <span className="fw-semibold">touch</span></h2>
                 </div>
                 <div className="row">
                     
                     <div className="contact-form relative">
-                        <img src="images/shapes/flower.svg" className="shape shape--8" alt="" />
+                        <img src="/images/shapes/flower.svg" className="shape shape--8" alt="" />
                         <form className="relative">
                             <div className="form-group">
                                 <label htmlFor="name" className="form-label">Name</label>
@@ -618,7 +651,8 @@ const Content = (props) => {
                             ></path>
                             </svg>
                         </span>
-                        <img src="images/hero/hero-1.png" className="contact-cover__image" alt="" />
+                        {/* <img src="/images/hero/hero-1.png" className="contact-cover__image" alt="" /> */}
+                        <img src="/images/contact-1.png" className="contact-cover__image" alt="" />
                     </div>
                 </div>
             </div>

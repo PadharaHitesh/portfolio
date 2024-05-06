@@ -1,40 +1,9 @@
-/**
- *
- * Template name: 
- * Template url: http://kri8thm.in/html/solosuter/theme
- * Author: Kri8thm (kri8thm.in) <kri8thm@gmail.com>
- * Version: 1.0.0
- * Written by: Kri8thm
- * ---------------------------------------------------------------- */
-
-/**
- * Table of contents
- *
- * 01. CSS Variables
- * 02. Dark Styles
- * 03. Reboot CSS
- * 04. Typography
- * 05. Spacing
- * 06. Grid System
- * 07. Components
- * 08. Core Styles
- * 09. Homepage
- * 10. Footer Styles
- * 11. Animation
- * 12. Responsive Styles
- *
- */
-
-
-/** 
- *
- * 01. CSS Variables
- * ---------------------------------------------------------------- */
 :root {
     /* Theme colors */
-    --primary: #176B87;
+    
+    --primary: sienna;
     --primary-rgb: 23, 107, 135;    
-    --secondary: #64CCC5;
+    --secondary: #FFF;
     --secondary-rgb: 100, 204, 197;    
     --dark: #04364A;
     --dark-rgb: 4, 54, 74;
@@ -341,7 +310,7 @@ figure {
 img,
 svg {
     vertical-align: middle;
-    max-width: 100%;
+    max-width: 100%;    
 }
 
 table {
@@ -847,7 +816,7 @@ h6, .h6 {
     line-height: 1.5;
     background-color: var(--secondary);
     background-clip: padding-box;
-    border: 1px solid transparent;
+    border: 1px solid var(--primary);
     border-radius: 16px;
     -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1868,7 +1837,6 @@ h6, .h6 {
     font-weight: 600;
     line-height: 1;
     color: var(--heading-color);
-    margin-top: 8px;
 }
 
 .service .service__text {
@@ -2467,7 +2435,7 @@ h6, .h6 {
     }
 
     .experience-list .experience-list__item {
-        width: 50%;
+        width: 25%;
     }
     
     .experience-list .experience-list__title {
@@ -2652,7 +2620,7 @@ h6, .h6 {
     }
 
     .shape.shape--10 {
-        right: 0;
+        right: -150px;
         bottom: 10px;
     }
 
@@ -2694,7 +2662,7 @@ h6, .h6 {
     }
 
     .experience {
-        width: 66.66666667%;
+        width: 100%;
     }
 
     .section .section__head {
@@ -2817,7 +2785,7 @@ h6, .h6 {
 
     .shape.shape--8 {
         right: -90px;
-        bottom: 65px;
+        bottom: 190px;
     }
 
     .shape.shape--9 {
@@ -3015,4 +2983,22 @@ h6, .h6 {
 
 .setting input:checked + label #light {
     display: block;
+}
+.progressCircle .counter-percentage {
+    bottom: 5%;
+    top: unset;
+}
+.progressCircle .circle{
+    background-color: #04364A;
+
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.progressCircle .skill-logo {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
 }

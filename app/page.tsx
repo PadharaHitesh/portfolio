@@ -11,7 +11,6 @@ export default function Home() {
           <Sidebar/>
           <Content />
         </div>
-        {/* <Script src="/js/plugins.js" strategy="beforeInteractive"  /> */}
         <Script src="/js/scripts.js"  />  
     </main>
   );
