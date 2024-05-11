@@ -6,7 +6,14 @@ const Sidebar = () => {
     
         <aside id="sidebar">
             <div className="sidebar-header">
-                <a href="/" role="button" id="sidebar_close">&times;</a>
+                <Image
+                    src="/images/logos/logo.png"
+                    width={141}
+                    height={27}
+                    alt="Picture of the author"
+                    priority={true}
+                />
+                <Link href="/" role="button" id="sidebar_close">&times;</Link>
             </div>
             <div className="sidebar-body">
                 <nav className="navbar">

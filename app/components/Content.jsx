@@ -1,8 +1,7 @@
 "use client"
 import React, { use } from 'react'
-import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation,Pagination } from 'swiper/modules'
+import { Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -12,24 +11,11 @@ const Content = (props) => {
   return (
     
     <main id="main">
-        {/* <header id="header">
+        <header id="header">
             <div className="container">
-                <div className="setting">
-                    <input type="checkbox" id="theme" />
-                    <label htmlFor="theme">
-                        <svg width="24" height="24" id="light" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" d="M12 21.9966C6.47715 21.9966 2 17.5194 2 11.9966C2 6.47373 6.47715 1.99658 12 1.99658C17.5228 1.99658 22 6.47373 22 11.9966C22 17.5194 17.5228 21.9966 12 21.9966ZM12 19.9966C16.4183 19.9966 20 16.4149 20 11.9966C20 7.5783 16.4183 3.99658 12 3.99658C7.58172 3.99658 4 7.5783 4 11.9966C4 16.4149 7.58172 19.9966 12 19.9966ZM7.00035 15.3158C9.07995 15.1645 11.117 14.2938 12.7071 12.7037C14.2972 11.1136 15.1679 9.07654 15.3193 6.99694C15.6454 7.21396 15.955 7.46629 16.2426 7.75394C18.5858 10.0971 18.5858 13.8961 16.2426 16.2392C13.8995 18.5824 10.1005 18.5824 7.75736 16.2392C7.46971 15.9516 7.21738 15.642 7.00035 15.3158Z"/>
-                        </svg>
-                        <svg width="24" height="24" id="dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" d="M12 21.9966C6.47715 21.9966 2 17.5194 2 11.9966C2 6.47373 6.47715 1.99658 12 1.99658C17.5228 1.99658 22 6.47373 22 11.9966C22 17.5194 17.5228 21.9966 12 21.9966ZM5.32889 16.4219C6.76378 18.5674 9.20868 19.9801 11.9836 19.9801C16.4018 19.9801 19.9836 16.3984 19.9836 11.9801C19.9836 9.20518 18.5707 6.76021 16.4251 5.32535C17.2705 8.35312 16.5025 11.7367 14.1213 14.118C11.7401 16.4992 8.3566 17.2671 5.32889 16.4219Z"/>
-                        </svg>
-                        <span className="hidden">Change theme</span>
-                    </label>
-                </div>
                 <a href="#" role="button" id="hamburger" aria-label="Hamburger"></a>
-
             </div>
-        </header> */}
+        </header>
         <section id="intro">
             <div className="container relative">
                 <div className="row">
@@ -111,7 +97,7 @@ const Content = (props) => {
                         <p className="fw-medium">Crafting seamless user experiences through code and creativity, I specialize in full-stack development encompassing front-end technologies such as React.js and Next.js, along with backend frameworks like Laravel and CodeIgniter. Let's bring your website to life with intuitive interfaces and visually stunning layouts, tailored to engage and inspire your audience.</p>
                         <div className="stats">
                             <div className="stats__item">
-                                <span className="stats__number">7</span>
+                                <span className="stats__number">8</span>
                                 <p>Years of Experience</p>
                             </div>
                             <div className="stats__item">
@@ -178,11 +164,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={95}
+                                data-percent={80}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                95%
+                                80%
                                 </div>
                                 <div className="absolute flex-center skill-logo">
                                 <div className="text-center icon">
@@ -197,11 +183,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={95}
+                                data-percent={80}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                95%
+                                80%
                                 </div>
                                 <div className="absolute flex-center skill-logo">
                                 <div className="text-center icon">
@@ -212,7 +198,7 @@ const Content = (props) => {
                             </div>
                             <div className="text-white name pt-2">PHP</div>
                         </div>
-                        <div className="text-center pb-3">
+                        {/* <div className="text-center pb-3">
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
@@ -230,7 +216,7 @@ const Content = (props) => {
                             </div>
                             </div>
                             <div className="text-white name pt-2">VueJS</div>
-                        </div>
+                        </div> */}
                         <div className="text-center pb-3">
                             <div className="progressCircle pt-2">
                             <div
@@ -254,11 +240,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={95}
+                                data-percent={50}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                95%
+                                50%
                                 </div>
                                 <div className="absolute flex-center skill-logo">
                                 <div className="text-center icon">
@@ -276,11 +262,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={95}
+                                data-percent={75}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                95%
+                                75%
                                 </div>
                                 <div className="absolute flex-center skill-logo">
                                 <div className="text-center icon">
@@ -298,11 +284,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={95}
+                                data-percent={40}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                95%
+                                40%
                                 </div>
                                 <div className="absolute flex-center skill-logo">
                                 <div className="text-center icon">
@@ -317,11 +303,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={90}
+                                data-percent={80}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                90%
+                                80%
                                 </div>
                                 <div className="absolute flex-center skill-logo">
                                 <div className="text-center icon">
@@ -336,11 +322,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={90}
+                                data-percent={80}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                90%
+                                80%
                                 </div>
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
                                 <div className="absolute flex-center skill-logo">
@@ -357,11 +343,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={85}
+                                data-percent={20}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                85%
+                                20%
                                 </div>
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
                                 <div className="absolute flex-center skill-logo">
@@ -378,11 +364,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={75}
+                                data-percent={30}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                75%
+                                30%
                                 </div>
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
                                 <div className="absolute flex-center skill-logo">
@@ -398,11 +384,11 @@ const Content = (props) => {
                             <div className="progressCircle pt-2">
                             <div
                                 className="relative w-32 h-32 mx-auto circle md:w-40 md:h-40"
-                                data-percent={75}
+                                data-percent={60}
                             >
                                 <canvas width={320} height={320} style={{ height: 160, width: 160 }} />
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage">
-                                75%
+                                60%
                                 </div>
                                 <div className="absolute inset-0 text-2xl font-semibold text-white label flex-center counter-percentage" />
                                 <div className="absolute flex-center skill-logo">

@@ -15,22 +15,22 @@ const Header = () => {
                 content="portfolio template, portfolio, personal template, responsive portfolio, personal, themeforest, html portfolio template, css3, html5"
             />
             <title>Hitesh Padhara | Full Stack Developer</title>
-            <Link href="images/logos/favicon.png" rel="icon" ></Link>
-            <Link rel="apple-touch-icon" href="images/logos/touch-icon-iphone.png" ></Link>
+            <Link href="/images/logos/favicon.ico" rel="icon" ></Link>
+            <Link rel="apple-touch-icon" href="/images/logos/touch-icon-iphone.png" ></Link>
             <Link
                 rel="apple-touch-icon"
                 sizes="152x152"
-                href="images/logos/touch-icon-ipad.png"
+                href="/images/logos/apple-touch-icon-152x152.png"
             ></Link>
             <Link
                 rel="apple-touch-icon"
                 sizes="180x180"
-                href="images/logos/touch-icon-iphone-retina.png"
+                href="/images/logos/apple-touch-icon-180x180.png"
             ></Link>
             <Link
                 rel="apple-touch-icon"
                 sizes="167x167"
-                href="images/logos/touch-icon-ipad-retina.png"
+                href="/images/logos/apple-touch-icon-152x152.png"
             ></Link>
             <Link rel="preconnect" href="https://fonts.googleapis.com" ></Link>
             <Link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" ></Link>
