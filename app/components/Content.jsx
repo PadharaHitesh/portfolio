@@ -1,13 +1,45 @@
 "use client"
-import React, { use } from 'react'
+import React, { useState, FormEvent } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
+import { Resend } from 'resend';
+
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 const Content = (props) => {
+
+
+     // Define state variables
+     const [name, setName] = useState('');
+     const [email, setEmail] = useState('');
+     const [message, setMessage] = useState('');
+ 
+     // Handle form submission
+     const onSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                body: JSON.stringify({ name, email, message }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log('Response data:', data);
+        } catch (err) {
+            console.error('Error:', err);
+        }
+     }; 
+ 
   return (
     
     <main id="main">
@@ -592,18 +624,18 @@ const Content = (props) => {
                     
                     <div className="contact-form relative">
                         <img src="/images/shapes/flower.svg" className="shape shape--8" alt="" />
-                        <form className="relative">
+                        <form className="relative" onSubmit={onSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name" className="form-label">Name</label>
-                                <input type="text" id="name" className="form-control" placeholder="Enter your name" />
+                                <input  value ={name} onChange={(e)=> setName(e.target.value)} type="text" id="name" className="form-control" placeholder="Enter your name" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email" className="form-label">Email</label>
-                                <input type="text" id="email" className="form-control" placeholder="Enter your email id" />
+                                <input value ={email} onChange={(e)=> setEmail(e.target.value)} type="text" id="email" className="form-control" placeholder="Enter your email id" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="msg" className="form-label">Message</label>
-                                <textarea name="msg" id="msg" cols="30" rows="5" className="form-control" placeholder="Write your words"></textarea>
+                                <textarea value ={message} onChange={(e)=> setMessage(e.target.value)} name="msg" id="msg" cols="30" rows="5" className="form-control" placeholder="Write your words"></textarea>
                             </div>
                             <button type="submit" id="contact_btn" className="btn btn--primary">
                                 <span>Send Now</span>

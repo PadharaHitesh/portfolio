@@ -201,6 +201,7 @@ function scrollToElement() {
  * Validate form & send bind event on controls.
  */
 function contactForm() {
+    
     const contactButton = document.getElementById('contact_btn');
     const name = document.getElementById('name');
     const email = document.getElementById('email');
@@ -326,7 +327,7 @@ window.onload = () => {
     // portfolioCards();
     // testimonialSlider();
     // blogCards();
-    contactForm();
+    // contactForm();
 }
 
 /**
