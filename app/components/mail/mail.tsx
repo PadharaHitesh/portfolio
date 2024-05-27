@@ -4,16 +4,18 @@ import React from 'react';
 
 interface WelcomeEmailTemplateProps {
     name: string;
+    email: string;
+    message: string;
 }
 
-const WelcomeEmailTemplate: React.FC<WelcomeEmailTemplateProps> = ({ name }) => {
+const WelcomeEmailTemplate: React.FC<WelcomeEmailTemplateProps> = ({ name , email, message  }) => {
     return (
         <html>
             <head>
                 <style>{`
                     body {
                         font-family: Arial, sans-serif;
-                        color: #333;
+                        color: #333;s
                         background-color: #f4f4f4;
                         padding: 20px;
                     }
@@ -48,7 +50,7 @@ const WelcomeEmailTemplate: React.FC<WelcomeEmailTemplateProps> = ({ name }) => 
                     <p>Feel free to explore our website and get involved. If you have any questions or need assistance, don't hesitate to reach out to us.</p>
                     <p>Once again, welcome aboard!</p>
                     <p>Best regards,</p>
-                    <p>The [Your Company Name] Team</p>
+                    <p>Hitesh Padhara</p>
                 </div>
             </body>
         </html>

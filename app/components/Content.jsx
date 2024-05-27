@@ -114,7 +114,7 @@ const Content = (props) => {
                                 <div className="about-info__text fw-medium">Surat, Gujarat, India</div>
                             </div>
                         </div>
-                        <a href="#" className="btn btn--primary">
+                        <a href="/documents/resume.pdf" download="resume.pdf" className="btn btn--primary">
                             <span>Download Resume</span>
                             <span className="btn__icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -594,7 +594,7 @@ const Content = (props) => {
                     <div className="cta__content" data-animate="fade-left">
                         <p>Discuss your project needs with me; together, we'll create remarkable solutions and experiences.</p>
                         <div className="link-group">
-                            <a href="#" className="btn btn--secondary">
+                            <a href="/documents/resume.pdf" download="resume.pdf" className="btn btn--secondary">
                                 <span>Download Resume</span>
                                 <span className="btn__icon">
                                     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
