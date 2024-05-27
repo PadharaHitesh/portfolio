@@ -2,6 +2,7 @@
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 import EmailTemplate from '../../app/components/mail/mail';
+import ReactDOMServer from 'react-dom/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -14,12 +15,14 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             // Create email content
             const emailContent = EmailTemplate({ name, email, message });
 
+            const emailHtmlContent = ReactDOMServer.renderToStaticMarkup(emailContent);
+
             // Send email using Resend
             const { data, error } = await resend.emails.send({
                 from: 'Padhara Hitesh <padharahitesh007@gmail.com>', // Sender name and Gmail address
                 to: email, // Recipient address
                 subject: 'New Message from Portfolio Website',
-                html: emailContent,
+                html: emailHtmlContent,
             });
 
             if (error) {
