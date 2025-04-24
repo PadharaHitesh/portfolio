@@ -1,0 +1,59 @@
+.floating-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(20px);
+  padding: 8px 12px;
+  border-radius: 32px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+}
+
+.nav-btn fa-icon {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.nav-btn span {
+  margin-top: 4px;
+  font-size: 0.6rem;
+  color: #555;
+}
+
+/* Active state */
+.nav-btn.active {
+  background: #333;
+}
+
+.nav-btn.active fa-icon,
+.nav-btn.active span {
+  color: #fff !important;
+}
+
+/* Hover */
+.nav-btn:hover:not(.active) {
+  background: #f0f0f0;
+}

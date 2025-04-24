@@ -1,0 +1,19 @@
+<nav class="nav-menu">
+  <ul>
+    <li [class.active]="activeSection === 'started-section'" (click)="scrollToSection('started-section')">
+      <fa-icon [icon]="faHome"></fa-icon>
+    </li>
+    <li [class.active]="activeSection === 'services-section'" (click)="scrollToSection('services-section')">
+      <fa-icon [icon]="faTools"></fa-icon>
+    </li>
+    <li [class.active]="activeSection === 'skills-section'" (click)="scrollToSection('skills-section')">
+      <fa-icon [icon]="faCode"></fa-icon>
+    </li>
+    <li [class.active]="activeSection === 'works-section'" (click)="scrollToSection('works-section')">
+      <fa-icon [icon]="faBriefcase"></fa-icon>
+    </li>
+    <li [class.active]="activeSection === 'contact-section'" (click)="scrollToSection('contact-section')">
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+    </li>
+  </ul>
+</nav>
